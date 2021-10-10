@@ -52,8 +52,9 @@
 		DCB006032712807B003CE01D /* CovidCountsApp */ = {
 			isa = PBXGroup;
 			children = (
+				DCB00614271284F8003CE01D /* Views */,
+				DCB00613271284F0003CE01D /* Models */,
 				DCB006042712807B003CE01D /* CovidCountsAppApp.swift */,
-				DCB006062712807B003CE01D /* ContentView.swift */,
 				DCB006082712807E003CE01D /* Assets.xcassets */,
 				DCB0060D2712807E003CE01D /* Info.plist */,
 				DCB0060A2712807E003CE01D /* Preview Content */,
@@ -67,6 +68,21 @@
 				DCB0060B2712807E003CE01D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCB00613271284F0003CE01D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCB00614271284F8003CE01D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCB006062712807B003CE01D /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
