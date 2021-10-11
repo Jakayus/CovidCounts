@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4EDB19271409C100AA346A /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EDB18271409C100AA346A /* StateData.swift */; };
 		DCB006052712807B003CE01D /* CovidCountsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB006042712807B003CE01D /* CovidCountsAppApp.swift */; };
 		DCB006072712807B003CE01D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB006062712807B003CE01D /* ContentView.swift */; };
 		DCB006092712807E003CE01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB006082712807E003CE01D /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC4EDB18271409C100AA346A /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
 		DCB006012712807B003CE01D /* CovidCountsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidCountsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB006042712807B003CE01D /* CovidCountsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCountsAppApp.swift; sourceTree = "<group>"; };
 		DCB006062712807B003CE01D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		DCB00613271284F0003CE01D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC4EDB18271409C100AA346A /* StateData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				DCB006072712807B003CE01D /* ContentView.swift in Sources */,
 				DCB006052712807B003CE01D /* CovidCountsAppApp.swift in Sources */,
+				DC4EDB19271409C100AA346A /* StateData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
