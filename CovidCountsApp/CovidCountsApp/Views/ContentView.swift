@@ -9,20 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let sampleDataSet = [
-        SampleData(id: 1, title: "FL"),
-        SampleData(id: 2, title: "AZ"),
-        SampleData(id: 3, title: "HI")
-    ]
+    //MARK: PROPERTIES
+    
+    //subscribe to updates from Network Manager
+    @ObservedObject var networkManager = NetworkManager()
     
     
+    //MARK: VIEW
     var body: some View {
         NavigationView {
-            List(sampleDataSet) { state in
-                Text(state.title)
+            List(networkManager.stateDataList) { state in
+                Text(state.state)
             }
         }
+        .onAppear {
+            networkManager.fetchData() //call fetchData on startup
+        }
     }
+    
+    
+    
+    
+    //MARK: FUNCTIONS
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -32,9 +41,5 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
-struct SampleData: Identifiable {
-    let id: Int
-    let title: String
-}
 
 
