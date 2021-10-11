@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC4EDB19271409C100AA346A /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EDB18271409C100AA346A /* StateData.swift */; };
+		DC4EDB1B27140A8C00AA346A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EDB1A27140A8C00AA346A /* NetworkManager.swift */; };
 		DCB006052712807B003CE01D /* CovidCountsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB006042712807B003CE01D /* CovidCountsAppApp.swift */; };
 		DCB006072712807B003CE01D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB006062712807B003CE01D /* ContentView.swift */; };
 		DCB006092712807E003CE01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB006082712807E003CE01D /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		DC4EDB18271409C100AA346A /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
+		DC4EDB1A27140A8C00AA346A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DCB006012712807B003CE01D /* CovidCountsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidCountsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB006042712807B003CE01D /* CovidCountsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCountsAppApp.swift; sourceTree = "<group>"; };
 		DCB006062712807B003CE01D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				DC4EDB18271409C100AA346A /* StateData.swift */,
+				DC4EDB1A27140A8C00AA346A /* NetworkManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4EDB1B27140A8C00AA346A /* NetworkManager.swift in Sources */,
 				DCB006072712807B003CE01D /* ContentView.swift in Sources */,
 				DCB006052712807B003CE01D /* CovidCountsAppApp.swift in Sources */,
 				DC4EDB19271409C100AA346A /* StateData.swift in Sources */,
