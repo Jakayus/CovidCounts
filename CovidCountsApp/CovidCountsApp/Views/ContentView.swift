@@ -18,9 +18,18 @@ struct ContentView: View {
     //MARK: VIEW
     var body: some View {
         NavigationView {
-            List(networkManager.stateDataList) { state in
-                Text(state.state)
+            List {
+                ForEach (networkManager.stateDataList) { state in
+                    NavigationLink (destination: Text("test") ) {
+                        Text("\(state.state)")
+                    }
+                }
             }
+            
+            
+//            List(networkManager.stateDataList) { state in
+//                Text(state.state)
+//            }
         }
         .onAppear {
             networkManager.fetchData() //call fetchData on startup
