@@ -9,7 +9,39 @@ import SwiftUI
 
 struct StateView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            Image("us_map1")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea()
+                .overlay (
+                
+                    VStack {
+                        Text("STATE NAME")
+                            .font(.system(.title, design: .rounded))
+                            .fontWeight(.heavy)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.gray)
+                            .cornerRadius(5)
+                        Text("CASES: NUMBER")
+                            .foregroundColor(.white)
+                            .bold()
+                        Text("POPULATION: NUMBER")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                    .padding()
+                    .padding()
+                    .padding(.horizontal)
+                    .background(Color.black)
+                    .cornerRadius(10)
+                    .opacity(0.8)
+                    ,alignment: .center
+                )
+            
+        }
     }
 }
 
@@ -18,3 +50,5 @@ struct StateView_Previews: PreviewProvider {
         StateView()
     }
 }
+
+

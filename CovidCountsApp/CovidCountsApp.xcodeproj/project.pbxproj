@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC344D8E2719381D00AD5E23 /* Unsplash.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC344D8D2719381D00AD5E23 /* Unsplash.txt */; };
 		DC4EDB19271409C100AA346A /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EDB18271409C100AA346A /* StateData.swift */; };
 		DC4EDB1B27140A8C00AA346A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EDB1A27140A8C00AA346A /* NetworkManager.swift */; };
 		DC72E5B527191E7B00CF259B /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72E5B427191E7B00CF259B /* StateView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC344D8D2719381D00AD5E23 /* Unsplash.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Unsplash.txt; sourceTree = "<group>"; };
 		DC4EDB18271409C100AA346A /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
 		DC4EDB1A27140A8C00AA346A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DC72E5B427191E7B00CF259B /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		DCB006032712807B003CE01D /* CovidCountsApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC344D8D2719381D00AD5E23 /* Unsplash.txt */,
 				DCB00614271284F8003CE01D /* Views */,
 				DCB00613271284F0003CE01D /* Models */,
 				DCB006042712807B003CE01D /* CovidCountsAppApp.swift */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB0060C2712807E003CE01D /* Preview Assets.xcassets in Resources */,
+				DC344D8E2719381D00AD5E23 /* Unsplash.txt in Resources */,
 				DCB006092712807E003CE01D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

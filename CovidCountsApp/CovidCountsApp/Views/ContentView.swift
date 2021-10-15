@@ -20,17 +20,16 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach (networkManager.stateDataList) { state in
-                    NavigationLink (destination: Text("test") ) {
+                    NavigationLink (destination: StateView() ) {
                         Text("\(state.state)")
                     }
                 }
             }
             
-            
-//            List(networkManager.stateDataList) { state in
-//                Text(state.state)
-//            }
+        .navigationTitle("COVID Counts")
         }
+        //.navigationTitle("test")
+        .navigationViewStyle(.stack)
         .onAppear {
             networkManager.fetchData() //call fetchData on startup
         }
