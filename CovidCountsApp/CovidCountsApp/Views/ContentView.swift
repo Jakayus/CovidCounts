@@ -20,7 +20,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach (networkManager.stateDataList) { state in
-                    NavigationLink (destination: StateView() ) {
+                    NavigationLink (destination: StateView(stateData: state) ) {
                         Text("\(state.state)")
                     }
                 }

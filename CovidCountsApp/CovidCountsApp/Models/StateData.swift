@@ -23,3 +23,6 @@ struct StateData: Codable, Identifiable {
     let population: Int?
     
 }
+
+
+

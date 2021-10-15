@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct StateView: View {
+    
+    //MARK: Properties
+    var stateData : StateData
+    
     var body: some View {
         VStack {
             
@@ -16,9 +20,8 @@ struct StateView: View {
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
                 .overlay (
-                
                     VStack {
-                        Text("STATE NAME")
+                        Text("STATE NAME: \(stateData.state)")
                             .font(.system(.title, design: .rounded))
                             .fontWeight(.heavy)
                             .foregroundColor(.white)
@@ -45,10 +48,10 @@ struct StateView: View {
     }
 }
 
-struct StateView_Previews: PreviewProvider {
-    static var previews: some View {
-        StateView()
-    }
-}
-
+//struct StateView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StateView()
+//    }
+//}
+//
 
