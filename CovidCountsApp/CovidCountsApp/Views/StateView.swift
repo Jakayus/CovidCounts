@@ -16,31 +16,50 @@ struct StateView: View {
     var body: some View {
         VStack {
             
-            Image("us_map1")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea()
-                .overlay (
-                    VStack {
-                        Text("\(stateData.state)")
-                            .font(.system(.title, design: .rounded))
-                            .fontWeight(.heavy)
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.gray)
-                            .cornerRadius(5)
-                        Text("CASES: \(stateData.cases)")
-                            .foregroundColor(.white)
-                            .bold()
-                    }
+            
+            VStack {
+                Text("\(stateData.state)")
+                    .font(.system(.title, design: .rounded))
+                    .fontWeight(.heavy)
+                    .foregroundColor(.white)
                     .padding()
-                    .padding()
-                    .padding(.horizontal)
-                    .background(Color.black)
-                    .cornerRadius(10)
-                    .opacity(0.8)
-                    ,alignment: .center
-                )
+                    .background(Color.gray)
+                    .cornerRadius(5)
+                Text("CASES: \(stateData.cases)")
+                    .foregroundColor(.white)
+                    .bold()
+            }
+            .padding()
+            .padding()
+            .padding(.horizontal)
+            .background(Color.black)
+            .cornerRadius(10)
+            .opacity(0.8)
+//            Image("us_map1")
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
+//                .ignoresSafeArea()
+//                .overlay (
+//                    VStack {
+//                        Text("\(stateData.state)")
+//                            .font(.system(.title, design: .rounded))
+//                            .fontWeight(.heavy)
+//                            .foregroundColor(.white)
+//                            .padding()
+//                            .background(Color.gray)
+//                            .cornerRadius(5)
+//                        Text("CASES: \(stateData.cases)")
+//                            .foregroundColor(.white)
+//                            .bold()
+//                    }
+//                    .padding()
+//                    .padding()
+//                    .padding(.horizontal)
+//                    .background(Color.black)
+//                    .cornerRadius(10)
+//                    .opacity(0.8)
+//                    ,alignment: .center
+//                )
             
         }
     }

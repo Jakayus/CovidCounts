@@ -13,7 +13,7 @@ struct ContentView: View {
     
     //subscribe to updates from Network Manager
     @ObservedObject var networkManager = NetworkManager()
-    
+    @State var x = 0
     
     //MARK: VIEW
     var body: some View {
@@ -31,7 +31,10 @@ struct ContentView: View {
         //.navigationTitle("test")
         .navigationViewStyle(.stack)
         .onAppear {
-            networkManager.fetchData() //call fetchData on startup
+            if x == 0 {
+                networkManager.fetchData() //call fetchData on startup
+            }
+            x = 1
         }
     }
 
