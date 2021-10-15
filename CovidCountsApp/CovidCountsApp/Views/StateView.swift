@@ -32,9 +32,6 @@ struct StateView: View {
                         Text("CASES: \(stateData.cases)")
                             .foregroundColor(.white)
                             .bold()
-                        Text("POPULATION: \(stateData.population ?? -1)") //TODO: better nil printout
-                            .foregroundColor(.white)
-                            .bold()
                     }
                     .padding()
                     .padding()

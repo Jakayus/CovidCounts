@@ -20,12 +20,12 @@ struct StateData: Codable, Identifiable {
     
     let state: String
     let cases: Int
-    let population: Int?
+    //let population: Int?
     
 }
 
 extension StateData {
     //Dummy Data
-    static let fl = StateData(state: "Sample State", cases: 100, population: nil)
+    static let fl = StateData(state: "Sample State", cases: 100)
 }
 
