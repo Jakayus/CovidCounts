@@ -9,9 +9,10 @@ import SwiftUI
 
 struct StateView: View {
     
-    //MARK: Properties
+    //MARK: PROPERTIES
     var stateData : StateData
     
+    //MARK: VIEW
     var body: some View {
         VStack {
             
@@ -21,17 +22,17 @@ struct StateView: View {
                 .ignoresSafeArea()
                 .overlay (
                     VStack {
-                        Text("STATE NAME: \(stateData.state)")
+                        Text("\(stateData.state)")
                             .font(.system(.title, design: .rounded))
                             .fontWeight(.heavy)
                             .foregroundColor(.white)
                             .padding()
                             .background(Color.gray)
                             .cornerRadius(5)
-                        Text("CASES: NUMBER")
+                        Text("CASES: \(stateData.cases)")
                             .foregroundColor(.white)
                             .bold()
-                        Text("POPULATION: NUMBER")
+                        Text("POPULATION: \(stateData.population ?? -1)") //TODO: better nil printout
                             .foregroundColor(.white)
                             .bold()
                     }
@@ -48,10 +49,10 @@ struct StateView: View {
     }
 }
 
-//struct StateView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StateView()
-//    }
-//}
-//
+struct StateView_Previews: PreviewProvider {
+    static var previews: some View {
+        StateView(stateData: StateData.fl)
+    }
+}
+
 

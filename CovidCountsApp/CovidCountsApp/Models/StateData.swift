@@ -24,5 +24,8 @@ struct StateData: Codable, Identifiable {
     
 }
 
-
+extension StateData {
+    //Dummy Data
+    static let fl = StateData(state: "Sample State", cases: 100, population: nil)
+}
 

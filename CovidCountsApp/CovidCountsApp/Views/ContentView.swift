@@ -34,10 +34,7 @@ struct ContentView: View {
             networkManager.fetchData() //call fetchData on startup
         }
     }
-    
-    
-    
-    
+
     //MARK: FUNCTIONS
     
 }
