@@ -12,6 +12,7 @@ class NetworkManager: ObservableObject {
     
     @Published var stateDataList = [StateData]()
     
+    //TODO: Consider Refactoring with Combine or Async Await
     func fetchData() {
         
         //hard coded API call for now
