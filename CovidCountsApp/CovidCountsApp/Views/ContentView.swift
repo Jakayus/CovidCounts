@@ -10,16 +10,18 @@ import SwiftUI
 struct ContentView: View {
     
     //MARK: PROPERTIES
+    @State private var states: [StateData] = []
     
-    //subscribe to updates from Network Manager
-    @ObservedObject var networkManager = NetworkManager()
+    
+
     @State var appStart = false
     
     //MARK: VIEW
     var body: some View {
         NavigationView {
+//            Text("test")
             List {
-                ForEach (networkManager.stateDataList) { state in
+                ForEach (states) { state in
                     NavigationLink (destination: StateView(stateData: state) ) {
                         Text("\(state.state)")
                     }
@@ -32,14 +34,30 @@ struct ContentView: View {
         .navigationViewStyle(.stack)
         .onAppear {
             if appStart == false {
-                networkManager.fetchData() //call fetchData on startup
+                getData()
             }
             appStart = true
         }
     }
 
     //MARK: FUNCTIONS
-    
+    func getData() {
+        
+        NetworkManager.shared.fetchData { result in
+            
+            DispatchQueue.main.async {
+                
+                switch result {
+                case .success(let statesList):
+                    states = statesList
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+            
+        }
+        
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
