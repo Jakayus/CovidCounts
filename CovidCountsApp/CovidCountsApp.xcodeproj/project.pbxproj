@@ -16,6 +16,7 @@
 		DCB006092712807E003CE01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB006082712807E003CE01D /* Assets.xcassets */; };
 		DCB0060C2712807E003CE01D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB0060B2712807E003CE01D /* Preview Assets.xcassets */; };
 		DCD6957B27C8C1130089105C /* CCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD6957A27C8C1130089105C /* CCError.swift */; };
+		DCD6958227CA197C0089105C /* CCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD6958127CA197C0089105C /* CCViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DCB0060B2712807E003CE01D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCB0060D2712807E003CE01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD6957A27C8C1130089105C /* CCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCError.swift; sourceTree = "<group>"; };
+		DCD6958127CA197C0089105C /* CCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				DC344D8D2719381D00AD5E23 /* Unsplash.txt */,
 				DCD6957A27C8C1130089105C /* CCError.swift */,
+				DCD6958127CA197C0089105C /* CCViewModel.swift */,
 				DCB00614271284F8003CE01D /* Views */,
 				DCB00613271284F0003CE01D /* Models */,
 				DCB006042712807B003CE01D /* CovidCountsAppApp.swift */,
@@ -174,6 +177,7 @@
 				DCB006072712807B003CE01D /* ContentView.swift in Sources */,
 				DC72E5B527191E7B00CF259B /* StateView.swift in Sources */,
 				DCB006052712807B003CE01D /* CovidCountsAppApp.swift in Sources */,
+				DCD6958227CA197C0089105C /* CCViewModel.swift in Sources */,
 				DCD6957B27C8C1130089105C /* CCError.swift in Sources */,
 				DC4EDB19271409C100AA346A /* StateData.swift in Sources */,
 			);

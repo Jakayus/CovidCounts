@@ -15,7 +15,7 @@ struct StateView: View {
     //MARK: VIEW
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .gray, .orange]), startPoint: .bottomTrailing, endPoint: .center)
+            LinearGradient(gradient: Gradient(colors: [.black, .gray, .white]), startPoint: .bottomTrailing, endPoint: .center)
             .ignoresSafeArea()
             VStack {
                 VStack {
