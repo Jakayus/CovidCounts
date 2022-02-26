@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CCListView: View {
     
     //MARK: PROPERTIES
-    @StateObject private var viewModel = CCViewModel()
+    @StateObject private var viewModel = CCListViewModel()
 
     //MARK: VIEW
     var body: some View {
@@ -22,10 +22,8 @@ struct ContentView: View {
                     }
                 }
             }
-            
-        .navigationTitle("COVID Counts")
+            .navigationTitle("COVID Counts")
         }
-        //.navigationTitle("test")
         .navigationViewStyle(.stack)
         .onAppear {
             if viewModel.appStart == false {
@@ -35,13 +33,11 @@ struct ContentView: View {
         }
     }
 
-    //MARK: FUNCTIONS
-
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CCListView()
     }
 }
 

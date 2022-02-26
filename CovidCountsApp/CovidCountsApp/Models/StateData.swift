@@ -20,7 +20,6 @@ struct StateData: Codable, Identifiable {
     
     let state: String
     let cases: Int
-    //let population: Int?
     
 }
 

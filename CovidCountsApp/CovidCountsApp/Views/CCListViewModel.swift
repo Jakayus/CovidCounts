@@ -7,18 +7,17 @@
 
 import SwiftUI
 
-final class CCViewModel: ObservableObject {
+final class CCListViewModel: ObservableObject {
     
     @Published var states: [StateData] = []
-    
     @Published var appStart = false
     
     func getData() {
         
         NetworkManager.shared.fetchData { result in
             
+            //Place on main thread since we are updating UI interface
             DispatchQueue.main.async {
-                
                 switch result {
                 case .success(let statesList):
                     self.states = statesList
@@ -26,9 +25,6 @@ final class CCViewModel: ObservableObject {
                     print(error.localizedDescription)
                 }
             }
-            
         }
-        
     }
-    
 }

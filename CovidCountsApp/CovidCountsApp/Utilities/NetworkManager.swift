@@ -8,10 +8,9 @@
 import Foundation
 import SwiftUI
 
-// ObservableObject makes network manager observable
 final class NetworkManager {
     
-    //create a singleton to use
+    //create a singleton for usage
     static let shared = NetworkManager()
     
     //@Published var stateDataList = [StateData]()
@@ -44,6 +43,7 @@ final class NetworkManager {
                 return
             }
 
+            //check data
             guard let data = data else {
                 completed(.failure(.invalidData))
                 return
@@ -53,48 +53,12 @@ final class NetworkManager {
                 let jsonDecoder = JSONDecoder()
                 let decodedData = try jsonDecoder.decode([StateData].self, from: data)
                 completed(.success(decodedData))
-                
-
             } catch {
                 completed(.failure(.issueOccured))
             }
-            
-            
-            
-            
-            
         }
         task.resume()
-        
-        
-//        //hard coded API call for now
-//        if let url = URL(string: "https://disease.sh/v3/covid-19/nyt/states?lastdays=1") {
-//            let session = URLSession(configuration: .default)
-//            let task = session.dataTask(with: url) { data, response, error in
-//                if error == nil {
-//
-//                    // Assumption 1: with error nil, assume data exists
-//                    // Assumption 2: data is in json format
-//
-//                    //decode JSON
-//                    let decoder = JSONDecoder()
-//                    if let safeData = data {
-//                        do {
-//                            let results = try decoder.decode([StateData].self, from: safeData)
-//
-//                            DispatchQueue.main.async {
-//                                self.stateDataList = results
-//                            }
-//                        }
-//                        catch {
-//                            print(error)
-//                            print(error.localizedDescription)
-//                        }
-//                    }
-//                }
-//            }
-//            task.resume()
-//        }
+
     } // end fetchData()
     
 } // end class
